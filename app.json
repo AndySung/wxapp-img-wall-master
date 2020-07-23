@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/hanpai/hanpai",
+    "pages/contact/contact"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+  ,
+  "tabBar": {
+    "color": "#000", 
+    "selectedColor": "#4092bf",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "价目表单",
+        "iconPath": "pages/images/list.png", 
+        "selectedIconPath": "pages/images/list_selected.png"
+      },
+      {
+        "pagePath": "pages/hanpai/hanpai",
+        "text": "全部价目",
+        "iconPath": "pages/images/all.png",
+        "selectedIconPath": "pages/images/all_selected.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "咨询客服",
+        "iconPath": "pages/images/kefu.png",
+        "selectedIconPath": "pages/images/kefu_selected.png"
+      }
+    ]
+  }
+}

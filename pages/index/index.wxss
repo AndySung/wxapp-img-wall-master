@@ -1,0 +1,39 @@
+/* page{
+  background: #f9f9f9;
+}
+.slide-image{
+  width: 100%;
+} */
+
+
+.swiper image {
+  width: 100%;
+  height: auto;
+}
+
+.myView {
+  font-size: 35rpx;
+  margin: 20rpx;
+}
+ 
+.cBtn {
+  height: 100rpx;
+  margin-left: 300rpx;
+}
+ 
+.cs_button {
+  background-color: #fff;
+  border: 0px;
+  height: 100rpx;
+  position: fixed;
+  margin-left: 240rpx;
+}
+ 
+.cs_button:after {
+  border: 0px;
+}
+ 
+.cs_image {
+  width: 100rpx;
+  height: 100rpx;
+}

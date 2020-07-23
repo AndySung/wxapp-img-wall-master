@@ -1,0 +1,21 @@
+<view class="cs_kefu">
+    
+    <button class="cs_button" mode='aspectFill'  open-type="contact" session-from="weapp">
+    点我咨询韩派客服哒
+    <!-- <image class="cs_image" mode='aspectFill' src="../images/chat_kefu.jpg"></image> -->
+    <!-- <image src="../images/chat_kefu.jpg" bindload="imageLoad" data-index="{{ index }}"  -->
+<!-- style="width:{{ images[index].width }}rpx; height:{{ images[index].height }}rpx;"></image> -->
+  </button>
+</view>
+<block wx:for-items="{{userListInfo}}" wx:key="userListInfoListId"> 
+<view class="weui_cell" data-id="{{item.id}}" bindtap='onlineClick'>
+<view class="weui_cell_hd">
+<image src="{{item.icon}}"></image>
+</view>
+<view class="weui_cell_bd">
+<view class="weui_cell_bd_p"> {{item.text}} </view>
+</view>
+<!-- <view wx:if="{{item.isunread}}" class="badge">{{item.unreadNum}}</view> -->
+<view class="with_arrow"></view>
+</view>
+</block>

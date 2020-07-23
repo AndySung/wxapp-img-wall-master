@@ -1,0 +1,10 @@
+<view class='images'>
+  <swiper class='detail-imgs' indicator-dots="{{true}}" autoplay='{{true}}' interval="{{5000}}" duration="{{500}}" circular="{{true}}" bindchange='bindchange' style="height:{{imgheights[current]}}rpx;">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item style="">
+        <image src="{{item}}" class='image-view' style="height:{{imgheights[current]}}rpx;width:{{imgwidth}}rpx;" bindload="imageLoad" data-src='{{item}}' data-index='{{index}}' bindtap='previewImg' data-previewurl='{{imgUrls}}'
+      data-currenturl='{{item}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
